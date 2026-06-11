@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Révisions Bac Physique-Chimie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Révisions Bac Physique-Chimie Terminale</h1>
+    <button id="themeBtn">Mode sombre</button>
+  </header>
+
+  <nav>
+    <button onclick="showSection('formules')">Formules</button>
+    <button onclick="showSection('qcm')">QCM</button>
+    <button onclick="showSection('exercices')">Exercices</button>
+  </nav>
+
+  <main>
+    <section id="formules" class="content">
+      <h2>Formules essentielles</h2>
+      <ul>
+        <li>F = m × a</li>
+        <li>E = P × t</li>
+        <li>Q = I × t</li>
+        <li>pH = -log([H₃O⁺])</li>
+        <li>n = m / M</li>
+      </ul>
+    </section>
+
+    <section id="qcm" class="content hidden">
+      <h2>QCM</h2>
+      <p>Quel est l'unité de la force ?</p>
+      <button onclick="answer('Faux')">Joule</button>
+      <button onclick="answer('Bravo !')">Newton</button>
+    </section>
+
+    <section id="exercices" class="content hidden">
+      <h2>Exercice</h2>
+      <p>Calculer la force exercée sur une masse de 2 kg accélérée à 3 m/s².</p>
+      <details>
+        <summary>Correction</summary>
+        F = m × a = 2 × 3 = 6 N.
+      </details>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
